@@ -1,0 +1,22 @@
+READING ASSIGNMENT
+Câu 1: What are the advantages of Polymorphism?
+• Giúp viết mã linh hoạt hơn.
+• Dễ mở rộng và bảo trì chương trình.
+• Giúp các đối tượng khác nhau có thể dùng chung một phương thức.
+Ví dụ:
+Media media1 = new Book();
+Media media2 = new DigitalVideoDisc();
+media1.play();
+media2.play();
+ Mặc dù cả 2 biến ở đây đều có kiểu là Media, nhưng play() sẽ gọi đúng
+phương thức của Book và DigitalVideoDisc. Nó giúp chúng ta không cần
+phải viết riêng cho từng loại.
+Câu 2: How is Inheritance useful to achieve Polymorphism in Java?
+• Khi một lớp con kế thừa lớp cha và ghi đè (override) các phương thức, ta có
+thể dùng lớp cha để gọi lớp con – tạo ra tính đa hình.
+• Ví dụ: Media m = new Book(); rồi gọi m.play();.
+Câu 3: What are the differences between Polymorphism and Inheritance in Java?
+• Kế thừa là cơ chế cho phép lớp con dùng lại code của lớp cha.
+• Đa hình là khả năng một đối tượng có nhiều hành vi khác nhau thông qua
+cùng một phương thức.
+• Kế thừa là nền tảng để tạo ra đa hình.
